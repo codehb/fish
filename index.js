@@ -35,3 +35,28 @@ function resize() {
 window.addEventListener('resize', resize, false); resize();
 function render() { // draw to screen here
 }
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 49) {
+        img.src = 'fish.png';
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 50) {
+        img.src = 'fish2.png';
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 51) {
+        img.src = 'fish3.png';
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 52) {
+        img.src = 'fish.png';
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 53) {
+        img.src = 'fish.png';
+    }
+});
