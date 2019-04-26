@@ -10,15 +10,6 @@ can.onclick= function(evt) {
 	
     ctx.drawImage(img, x, y);
 };
-function rightclick(event) {
-  if (event.button == 2) {
-	  const context = canvas.getContext('2d');
-
-	  context.clearRect(0, 0, canvas.width, canvas.height);
-	  alert("Fish will be deleted")
-
-  }
-}
 /*
 can.onmousemove= function(evt) {
     var x = evt.offsetX - img.width/2,
@@ -52,11 +43,24 @@ document.addEventListener('keydown', function(event) {
 });
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 52) {
-        img.src = 'fish.png';
+        img.src = 'fish4.png';
     }
 });
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 53) {
-        img.src = 'fish.png';
+        img.src = 'fish5.png';
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 191) {
+        img.src = 'secret.png';
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 32) {
+        const context = canvas.getContext('2d');
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        alert("Fish will be KILLED")
     }
 });
